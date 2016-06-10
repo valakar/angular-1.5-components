@@ -1,0 +1,16 @@
+html(ng-app)
+    head
+        //link(rel='stylesheet', href='node_modules/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='styles.css')
+    body(ng-cloak='')
+        nav.navbar.navbar-default.navbar-inverse
+            .container-fluid
+                .navbar-header
+                    a.navbar-brand(href='#') At The Movies
+        .container
+            | Hello!
+            | {{ 1 + 2 }}
+        //script(src='bower_components/angular/angular.js')
+        script(src='common.js')
+        script(src='app.js')
+        //script(src='ps-movies/module.js')
