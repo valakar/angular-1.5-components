@@ -1,8 +1,7 @@
 html(ng-app)
     head
-        //link(rel='stylesheet', href='node_modules/bootstrap/dist/css/bootstrap.css')
         link(rel='stylesheet', href='styles.css')
-    body(ng-cloak='')
+    body(class='ng-cloak')
         nav.navbar.navbar-default.navbar-inverse
             .container-fluid
                 .navbar-header
@@ -10,7 +9,6 @@ html(ng-app)
         .container
             | Hello!
             | {{ 1 + 2 }}
-        //script(src='bower_components/angular/angular.js')
+        app Loading...
         script(src='common.js')
         script(src='app.js')
-        //script(src='ps-movies/module.js')

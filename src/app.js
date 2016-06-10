@@ -1,8 +1,11 @@
-import angular from 'angular';
 import 'bootstrap/dist/css/bootstrap.css';
+import './styles/index.sass';
 
-console.log('hoorey2');
+import angular from 'angular';
+import AppComponent from './app.component.js';
+import Components from './components/components';
 
-(() => {
-    console.log('test');
-})();
+angular.module('myApp', [
+        Components.name
+    ])
+    .directive('app', AppComponent);
