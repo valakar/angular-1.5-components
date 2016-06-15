@@ -3,9 +3,9 @@ import './styles/index.sass';
 
 import angular from 'angular';
 import AppComponent from './app.component.js';
-import Components from './components/components';
+import Modules from './modules/modules';
 
-angular.module('myApp', [
-        Components.name
+angular.module('app', [
+        Modules.name
     ])
     .directive('app', AppComponent);

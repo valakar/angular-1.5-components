@@ -4,13 +4,13 @@ const
     webpack = require('webpack'),
     path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
-    // ExtractTextPlugin = require('extract-text-webpack-plugin'),
+// ExtractTextPlugin = require('extract-text-webpack-plugin'),
     SpritesmithPlugin = require('webpack-spritesmith'),
     autoprefixer = require('autoprefixer');
 
 module.exports = {
     // devtool: NODE_ENV == DEV ? 'cheap-inline-module-source-map' : null,
-    devtool:'cheap-inline-module-source-map',
+    devtool: 'cheap-inline-module-source-map',
     context: path.join(__dirname, 'src'),
     entry: {
         app: './app'
@@ -65,8 +65,8 @@ module.exports = {
                     plugins: ['transform-es2015-modules-commonjs']
                 }
             },
-            { test: /\.css$/, loader: 'style-loader!css-loader' },
-            { test: /\.sass$/, loaders: ['style', 'css?sourceMap', 'sass?sourceMap']},
+            {test: /\.css$/, loader: 'style-loader!css-loader'},
+            {test: /\.sass$/, loaders: ['style', 'css?sourceMap', 'sass?sourceMap']},
             // {
             //     test: /\.css$/,
             //     loader: 'style!css'
@@ -75,6 +75,7 @@ module.exports = {
             //     test: /\.sass$/,
             //     loader: ExtractTextPlugin.extract('css!postcss!sass')
             // },
+            {test: /\.html$/, loader: 'raw'},
             {
                 test: /\.jade$/,
                 loader: "jade"
@@ -88,16 +89,26 @@ module.exports = {
                 ]
             },
             // helps to load bootstrap's css.
-            { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-                loader: 'url?limit=10000&minetype=application/font-woff' },
-            { test: /\.woff2$/,
-                loader: 'url?limit=10000&minetype=application/font-woff' },
-            { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-                loader: 'url?limit=10000&minetype=application/octet-stream' },
-            { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-                loader: 'file' },
-            { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-                loader: 'url?limit=10000&minetype=image/svg+xml' }
+            {
+                test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url?limit=10000&minetype=application/font-woff'
+            },
+            {
+                test: /\.woff2$/,
+                loader: 'url?limit=10000&minetype=application/font-woff'
+            },
+            {
+                test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url?limit=10000&minetype=application/octet-stream'
+            },
+            {
+                test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'file'
+            },
+            {
+                test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url?limit=10000&minetype=image/svg+xml'
+            }
             // ,
             // {
             //     context: __dirname + '/src/images',

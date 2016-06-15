@@ -1,0 +1,20 @@
+div
+    p {{MovieListCtrl.message}}
+    table.table
+        tr
+            th Title
+            th Length
+            th Rating
+            th
+        tr(ng-repeat='movie in MovieListCtrl.movies')
+            td {{movie.title}}
+            td {{movie.length}}
+            td
+                movie-rating(value='movie.rating')
+                    span.glyphicon.glyphicon-star
+            td
+                .btn-group
+                    button.btn.btn-default(ng-click='MovieListCtrl.upRating(movie)')
+                        span.glyphicon.glyphicon-plus
+                    button.btn.btn-default(ng-click='MovieListCtrl.downRating(movie)')
+                        span.glyphicon.glyphicon-minus

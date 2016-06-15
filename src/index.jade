@@ -1,4 +1,4 @@
-html(ng-app)
+html(ng-app='app')
     head
         link(rel='stylesheet', href='styles.css')
     body(class='ng-cloak')
@@ -7,8 +7,6 @@ html(ng-app)
                 .navbar-header
                     a.navbar-brand(href='#') At The Movies
         .container
-            | Hello!
-            | {{ 1 + 2 }}
-        app Loading...
+            app Loading...
         script(src='common.js')
         script(src='app.js')
