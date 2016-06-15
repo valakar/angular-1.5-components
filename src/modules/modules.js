@@ -1,8 +1,8 @@
 import angular from 'angular';
 import MovieList from  './movie-list/movie-list';
-
-console.log('>> MovieList.name', MovieList.name);
+import MovieRating from  './movie-rating/movie-rating';
 
 export default angular.module('app.components', [
-    MovieList.name
+    MovieList.name,
+    MovieRating.name
 ]);
