@@ -6,6 +6,11 @@ html(ng-app='app')
             .container-fluid
                 .navbar-header
                     a.navbar-brand(href='#') At The Movies
+                ul.nav.navbar-nav.navbar-left
+                    li
+                        a(ui-sref='list') List
+                    li
+                        a(ui-sref='about') About
         .container
             app Loading...
         script(src='common.js')
