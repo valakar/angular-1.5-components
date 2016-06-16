@@ -7,9 +7,6 @@ import ngComponentRouter from '@angular/router/angular1/angular_1_router';
 import AppComponent from './app.component.js';
 import Modules from './modules/modules';
 
-console.log(uirouter);
-console.log(ngComponentRouter);
-
 angular.module('app', [
         uirouter,
         'ngComponentRouter',

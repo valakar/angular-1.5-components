@@ -44,7 +44,6 @@
     "@angular/router": "~0.2.0",
     "angular": "~1.5.6",
     "angular-mocks": "~1.5.6",
-    "angular-ui-router": "~0.3.1",
     "bootstrap": "~3.3.6"
   }
 }
