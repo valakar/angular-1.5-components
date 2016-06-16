@@ -1,11 +1,11 @@
 nav.navbar.navbar-default.navbar-inverse
     .container-fluid
         .navbar-header
-            a.navbar-brand(href='#') At The Movies
+            a.navbar-brand(ng-link="['List']") At The Movies
         ul.nav.navbar-nav.navbar-left
             li
-                a(ui-sref='list') List
+                a(ng-link="['List']") List
             li
-                a(ui-sref='about') About
+                a(ng-link="['About']") About
 .container
-    ui-view
+    ng-outlet
