@@ -1,4 +1,4 @@
-const'es2015', 
+const
     webpack = require('webpack'),
     path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
@@ -54,6 +54,13 @@ module.exports = {
     ],
 
     module: {
+        preLoaders: [
+            {
+                test: /\.js$/,
+                loader: 'eslint',
+                exclude: [/node_modules/, /\.spec.js$/]
+            }
+        ],
         loaders: [
             {
                 test: /\.js$/,

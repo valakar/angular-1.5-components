@@ -1,4 +1,11 @@
 {
-  "root": true,
-  "extends": "airbnb-base"
+    "root": true,
+    "extends": "airbnb-base",
+    "rules": {
+        //Style
+        "indent": [
+            2,
+            4
+        ]
+    }
 }
