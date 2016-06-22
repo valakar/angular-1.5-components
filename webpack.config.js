@@ -1,6 +1,4 @@
-'use strict';
-
-const
+const'es2015', 
     webpack = require('webpack'),
     path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),

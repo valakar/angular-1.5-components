@@ -5,10 +5,7 @@ module.exports = function (config) {
         basePath: '',
         frameworks: ['mocha', 'sinon-chai', 'chai'],
         files: [
-            {
-                pattern: 'test.config.js',
-                watched: false
-            }
+            'test.config.js'
         ],
         exclude: [],
         preprocessors: {
@@ -19,16 +16,16 @@ module.exports = function (config) {
             module: {
                 loaders: [
                     {
-                        test: /\.js/,
+                        test: /\.js$/,
                         exclude: [/node_modules/],
                         loader: 'babel',
                         query: {
                             plugins: ['transform-es2015-modules-commonjs']
                         }
                     },
-                    { test: /\.html/, loader: 'raw' },
+                    { test: /\.html$/, loader: 'raw' },
                     { test: /\.jade$/, loader: 'jade-loader' },
-                    { test: /\.sass/, loader:  ['style', 'css?sourceMap', 'sass?sourceMap'] },
+                    { test: /\.sass$/, loader:  ['style', 'css?sourceMap', 'sass?sourceMap'] },
                     { test: /\.css$/, loader: 'style!css' }
                 ]
             }

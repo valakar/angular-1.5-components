@@ -1,13 +1,13 @@
-import angular from 'angular';
-import mocks from 'angular-mocks';
+import 'angular';
+import 'angular-mocks';
 
-let context = require.context('./src', true, /\.spec\.js/);
+var context = require.context('./src', true, /\.spec\.js$/);
 context.keys().forEach(context);
 
-beforeEach(() => {
+beforeEach(function() {
     window.env = sinon.sandbox.create();
 });
 
-afterEach(() => {
+afterEach(function() {
     window.env.restore();
 });
