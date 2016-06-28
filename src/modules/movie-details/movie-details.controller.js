@@ -3,8 +3,10 @@ class MovieDetailsController {
         this.MovieDetailsService = MovieDetailsService;
     }
 
-    $routerOnActivate() {
-        this.MovieDetailsService.getMovieById(1);
+    $routerOnActivate(next) {
+        this.MovieDetailsService.getMovieById(next.params.id).then(movie => {
+            this.movie = movie;
+        });
     }
 }
 

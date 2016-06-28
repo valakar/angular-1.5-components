@@ -4,7 +4,7 @@ import template from './movie-list.jade';
 const movieListComponent = {
     template: template(),
     controller,
-    controllerAs: 'movieDetailsCtrl'
+    controllerAs: 'movieListCtrl'
 };
 
 export default movieListComponent;

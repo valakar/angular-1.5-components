@@ -4,7 +4,7 @@ import movieDetailsComponent from './movie-details.component';
 
 const movieDetailsModule = angular
     .module('movie-details', [])
-    .service('movieDetailsService', movieDetailsService)
+    .service('MovieDetailsService', movieDetailsService)
     .component('movieDetails', movieDetailsComponent);
 
 export default movieDetailsModule;

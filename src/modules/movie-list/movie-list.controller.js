@@ -13,6 +13,7 @@ class MovieListController {
     }
 
     upRating(movie) {
+        console.log(movie);
         if (movie.rating < 5) {
             movie.rating += 1;
         }

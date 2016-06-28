@@ -5,9 +5,7 @@ class MovieDetailsService {
 
     getMovieById(id) {
         return this.$http.get('/api/movies.json')
-            .then(response => {
-                return response.data.find(movie => movie.id === id)
-            });
+            .then(response => response.data.find(movie => movie.id === id));
     }
 }
 
