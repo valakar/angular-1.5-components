@@ -14,6 +14,11 @@ const appComponent = {
             name: 'About'
         },
         {
+            path: '/details/:id',
+            component: 'movieDetails',
+            name: 'Details'
+        },
+        {
             path: '/**',
             redirectTo: ['List']
         }

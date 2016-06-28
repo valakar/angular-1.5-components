@@ -10,7 +10,6 @@ div
             td {{movie.title}}
             td {{movie.length}}
             td
-                //| {{movie.rating}}
                 movie-rating(value='movie.rating')
                     span.glyphicon.glyphicon-star
             td
@@ -19,3 +18,5 @@ div
                         span.glyphicon.glyphicon-plus
                     button.btn.btn-default(ng-click='MovieListCtrl.downRating(movie)')
                         span.glyphicon.glyphicon-minus
+                    a.btn.btn-default(ng-link="['Details', {id: movie.id}]")
+                        span.glyphicon.glyphicon-zoom-in
