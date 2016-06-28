@@ -5,10 +5,8 @@ class MovieListService {
     }
 
     getMovies() {
-        return this.$http.get("/api/movies.json")
-            .then(function(response) {
-                return response.data;
-            });
+        return this.$http.get('/api/movies.json')
+            .then(response => response.data);
     }
 
 }

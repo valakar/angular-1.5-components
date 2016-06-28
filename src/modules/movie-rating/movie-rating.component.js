@@ -1,13 +1,13 @@
 import controller from './movie-rating.controller';
 import template from './movie-rating.jade';
 
-let movieRatingComponent = {
+const movieRatingComponent = {
     template: template(),
     controller,
     controllerAs: 'MovieRatingCtrl',
     transclude: true,
     bindings: {
-        value: "<"
+        value: '<'
     },
     bindToController: true
 };

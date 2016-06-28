@@ -6,6 +6,13 @@
         "indent": [
             2,
             4
-        ]
+        ],
+
+        //Variables
+        "no-param-reassign": 0,
+
+        //Error
+        "comma-dangle": [2, "never"],
+        "spaced-comment": 0
     }
 }

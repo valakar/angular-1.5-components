@@ -1,6 +1,6 @@
 import template from './app.jade';
 
-let appComponent = {
+const appComponent = {
     template: template(),
     $routeConfig: [
         {

@@ -1,8 +1,4 @@
 class MovieListController {
-
-    constructor() {
-    }
-
     $onInit() {
         this.entries = new Array(this.value);
     }

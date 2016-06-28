@@ -1,5 +1,4 @@
 class MovieListController {
-
     constructor(MovieListService) {
         this.MovieListService = MovieListService;
 
@@ -9,7 +8,7 @@ class MovieListController {
     $onInit() {
         this.MovieListService.getMovies()
             .then(movies => {
-                this.movies = movies
+                this.movies = movies;
             });
     }
 
@@ -17,13 +16,13 @@ class MovieListController {
         if (movie.rating < 5) {
             movie.rating += 1;
         }
-    };
+    }
 
     downRating(movie) {
         if (movie.rating > 1) {
             movie.rating -= 1;
         }
-    };
+    }
 }
 
 export default MovieListController;
