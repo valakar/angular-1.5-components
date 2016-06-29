@@ -14,7 +14,7 @@ const appComponent = {
             name: 'About'
         },
         {
-            path: '/details/:id',
+            path: '/details/:id/...',
             component: 'movieDetails',
             name: 'Details'
         },

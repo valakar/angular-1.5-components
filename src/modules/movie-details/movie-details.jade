@@ -1,6 +1,20 @@
 back
     .btn.btn-default
         span.glyphicon.glyphicon-arrow-left
-p {{ movieDetailsCtrl.movie.title }}
-p Length {{ movieDetailsCtrl.movie.length}}
-p Rating {{ movieDetailsCtrl.movie.rating }}
+h3 {{ movieDetailsCtrl.movie.title }}
+h3 Length {{ movieDetailsCtrl.movie.length}}
+h3 Rating {{ movieDetailsCtrl.movie.rating }}
+
+hr
+
+ul
+    li
+        a(ng-link="['Overview']") Overview
+    li
+        a(ng-link="['Cast']") Cast
+    li
+        a(ng-link="['Director']") Director
+
+hr
+
+ng-outlet
