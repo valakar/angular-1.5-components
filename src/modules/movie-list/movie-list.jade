@@ -9,8 +9,7 @@ div
             td {{movie.title}}
             td {{movie.length}}
             td
-                movie-rating(value='movie.rating')
-                    span.glyphicon.glyphicon-star
+                movie-rating(max='5', value='movie.rating')
             td
                 .btn-group
                     button.btn.btn-default(ng-click='movieListCtrl.upRating(movie)')

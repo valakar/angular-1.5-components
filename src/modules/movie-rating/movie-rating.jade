@@ -1,3 +1,2 @@
 span(ng-repeat='entry in MovieRatingCtrl.entries track by $index')
-    ng-transclude
-        | *
+    span.glyphicon(class='{{entry}}')

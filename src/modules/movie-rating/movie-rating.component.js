@@ -5,9 +5,9 @@ const movieRatingComponent = {
     template: template(),
     controller,
     controllerAs: 'MovieRatingCtrl',
-    transclude: true,
     bindings: {
-        value: '<'
+        value: '<',
+        max: '<'
     },
     bindToController: true
 };
