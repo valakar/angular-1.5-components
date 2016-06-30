@@ -1,3 +1,5 @@
+import './accordion.sass';
+
 import angular from 'angular';
 import accordion from './accordion.component';
 import accordionPanel from './accordion-panel.component';
