@@ -7,6 +7,7 @@ import MovieDirector from './movie-director/movie-director';
 import MovieOverview from './movie-overview/movie-overview';
 
 import Shared from './shared/shared';
+import Accordion from './accordion/accordion';
 
 export default angular.module('app.components', [
     MovieList.name,
@@ -15,5 +16,6 @@ export default angular.module('app.components', [
     MovieCast.name,
     MovieDirector.name,
     MovieOverview.name,
-    Shared.name
+    Shared.name,
+    Accordion.name
 ]);
