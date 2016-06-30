@@ -1,1 +1,1 @@
-# angular-1.5-components [![Build Status](https://travis-ci.org/valakar/angular-1.5-components.svg?branch=master)](https://travis-ci.org/valakar/angular-1.5-components)
+# angular-1.5-components [![Build Status](https://travis-ci.org/valakar/angular-1.5-components.svg?branch=master)](https://travis-ci.org/valakar/angular-1.5-components) [![codecov](https://codecov.io/gh/valakar/angular-1.5-components/branch/master/graph/badge.svg)](https://codecov.io/gh/valakar/angular-1.5-components)
