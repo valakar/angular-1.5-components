@@ -1,3 +1,5 @@
+import './movie-rating.sass';
+
 import angular from 'angular';
 import movieRatingComponent from './movie-rating.component';
 

@@ -1,2 +1,3 @@
-span(ng-repeat='entry in MovieRatingCtrl.entries track by $index')
-    span.glyphicon(class='{{entry}}')
+span(ng-repeat='entry in movieRatingCtrl.entries track by $index')
+    span.glyphicon(class='{{entry}}',
+    ng-click='movieRatingCtrl.setRating({value: $index + 1})')

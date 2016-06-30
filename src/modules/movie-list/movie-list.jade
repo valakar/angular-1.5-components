@@ -9,7 +9,8 @@ div
             td {{movie.title}}
             td {{movie.length}}
             td
-                movie-rating(max='5', value='movie.rating')
+                movie-rating(max='5', value='movie.rating',
+                set-rating='movieListCtrl.setRating(movie, value)')
             td
                 .btn-group
                     button.btn.btn-default(ng-click='movieListCtrl.upRating(movie)')

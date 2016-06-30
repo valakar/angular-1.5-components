@@ -4,10 +4,11 @@ import template from './movie-rating.jade';
 const movieRatingComponent = {
     template: template(),
     controller,
-    controllerAs: 'MovieRatingCtrl',
+    controllerAs: 'movieRatingCtrl',
     bindings: {
         value: '<',
-        max: '<'
+        max: '<',
+        setRating: '&'
     },
     bindToController: true
 };

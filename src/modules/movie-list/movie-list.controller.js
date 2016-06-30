@@ -12,6 +12,10 @@ class MovieListController {
             });
     }
 
+    setRating(movie, value) {
+        movie.rating = value;
+    }
+
     upRating(movie) {
         if (movie.rating < 5) {
             movie.rating += 1;
