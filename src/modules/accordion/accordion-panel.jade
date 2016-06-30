@@ -1,4 +1,4 @@
 .panel.panel-default
-    .panel-heading
-        h4.panel-title {{$ctrl.heading}}
-    .panel-body(ng-transclude)
+    .panel-heading(ng-click='accordionPanelCtrl.select()')
+        h4.panel-title {{accordionPanelCtrl.heading}}
+    .panel-body(ng-transclude, ng-if='accordionPanelCtrl.selected')
