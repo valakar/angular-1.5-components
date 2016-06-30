@@ -11,6 +11,15 @@ module.exports = function (config) {
         preprocessors: {
             'test.config.js': ['webpack', 'sourcemap']
         },
+        reporters: ['coverage'],
+        // reporters: ['progress', 'dots', 'coverage'],
+        coverageReporter: {
+            reporters: [
+                {type: 'lcov', dir: 'coverage/', subdir: '.'},
+                {type: 'json', dir: 'coverage/', subdir: '.'},
+                {type: 'text'}
+            ]
+        },
         webpack: {
             devtool: 'inline-source-map',
             module: {
@@ -23,6 +32,11 @@ module.exports = function (config) {
                             plugins: ['transform-es2015-modules-commonjs']
                         }
                     },
+                    {
+                        test: /\.js$/,
+                        loader: 'isparta',
+                        exclude: /node_modules|\.spec.js$/
+                    },
                     { test: /\.html$/, loader: 'raw' },
                     { test: /\.jade$/, loader: 'jade-loader' },
                     { test: /\.sass$/, loader:  ['style', 'css?sourceMap', 'sass?sourceMap'] },
@@ -30,7 +44,6 @@ module.exports = function (config) {
                 ]
             }
         },
-        reporters: ["progress"],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
