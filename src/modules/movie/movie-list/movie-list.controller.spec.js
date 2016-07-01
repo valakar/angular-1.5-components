@@ -1,4 +1,4 @@
-import MovieListController from './movie-list.controller';
+import MovieListController from './movie-list.controller.js';
 
 describe('The movie list controller', () => {
     let MovieListService, sut;

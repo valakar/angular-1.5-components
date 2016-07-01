@@ -1,5 +1,5 @@
 import angular from 'angular';
-import movieCastComponent from './movie-cast.component';
+import movieCastComponent from './movie-cast.component.js';
 
 const movieCastModule = angular
     .module('movie-cast', [])

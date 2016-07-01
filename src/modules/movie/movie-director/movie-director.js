@@ -1,5 +1,5 @@
 import angular from 'angular';
-import movieDirectorComponent from './movie-director.component';
+import movieDirectorComponent from './movie-director.component.js';
 
 const movieDirectorModule = angular
     .module('movie-director', [])

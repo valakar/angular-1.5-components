@@ -1,4 +1,4 @@
-import controller from './movie-rating.controller';
+import controller from './movie-rating.controller.js';
 import template from './movie-rating.jade';
 
 const movieRatingComponent = {

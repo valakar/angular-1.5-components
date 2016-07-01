@@ -1,4 +1,4 @@
-import controller from './movie-details.controller';
+import controller from './movie-details.controller.js';
 import template from './movie-details.jade';
 
 const movieDetailsComponent = {

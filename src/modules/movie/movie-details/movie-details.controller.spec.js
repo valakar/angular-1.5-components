@@ -1,4 +1,4 @@
-import MovieDetailsController from './movie-details.controller';
+import MovieDetailsController from './movie-details.controller.js';
 
 describe('The movie details controller', () => {
     let sut,

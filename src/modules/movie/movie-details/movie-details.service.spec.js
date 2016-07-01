@@ -1,4 +1,4 @@
-import MovieDetailsService from './movie-details.service';
+import MovieDetailsService from './movie-details.service.js';
 
 describe('The movie details service', () => {
     let sut,
