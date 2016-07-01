@@ -35,7 +35,7 @@ module.exports = function (config) {
                     {
                         test: /\.js$/,
                         loader: 'isparta',
-                        exclude: /node_modules|\.spec.js$/
+                        exclude: /node_modules|\.spec.js$|\.conf.js$/
                     },
                     { test: /\.html$/, loader: 'raw' },
                     { test: /\.jade$/, loader: 'jade-loader' },
